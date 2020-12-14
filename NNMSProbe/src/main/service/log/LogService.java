@@ -1,5 +1,7 @@
 package main.service.log;
 
+import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
+
 /**
  * Description: 日志服务<br> 
  *  
@@ -18,5 +20,16 @@ public interface LogService {
      * @throws Exception <br>
      */
     void printLog() throws Exception;
+    
+    /**
+     * 
+     * Description:用户打印日志 <br> 
+     *  
+     * @author hzy<br>
+     * @CreateDate 2020年12月14日 <br>
+     * @param userId 用户id
+     * @throws Exception <br>
+     */
+    void printLog(String userId) throws Exception;
 
 }
