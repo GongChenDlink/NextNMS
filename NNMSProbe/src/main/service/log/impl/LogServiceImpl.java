@@ -15,7 +15,12 @@ public class LogServiceImpl implements LogService {
 
     @Override
     public void printLog() throws Exception {
-        System.out.println("Print Log");
+        System.out.println("Print Log");        
+    }
+
+    @Override
+    public void printLog(String userId) throws Exception {
+        System.out.println(userId + "printed Log.");
     }
 
     @Override
