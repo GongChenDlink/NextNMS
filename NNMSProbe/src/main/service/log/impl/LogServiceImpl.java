@@ -23,4 +23,9 @@ public class LogServiceImpl implements LogService {
         System.out.println(userId + "printed Log.");
     }
 
+    @Override
+    public void printErrorLog() throws Exception {
+        System.out.println("Print Error Log");
+    }
+
 }
